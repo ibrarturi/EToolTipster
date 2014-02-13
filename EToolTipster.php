@@ -3,7 +3,7 @@
 /**
  * Wrapper for Jquery ToolTipster
  *
- * @author ibrar
+ * @author turi
  */
 class EToolTipster extends CWidget {
 
