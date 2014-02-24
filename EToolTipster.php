@@ -4,7 +4,7 @@
  * Wrapper for Jquery ToolTipster
  *
  * @author turi
- * @version $Id:$ (1.0)
+ * @version $Id:$ (1.0.1)
  */
 class EToolTipster extends CWidget {
 
