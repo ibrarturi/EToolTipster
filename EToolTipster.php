@@ -4,9 +4,16 @@
  * Wrapper for Jquery ToolTipster
  *
  * @author turi
+ * @version $Id:$ (1.0)
  */
 class EToolTipster extends CWidget {
 
+    /**
+     * 
+     * @var string url for the theme css file
+     */
+    public $themeCssFile = null;
+    
     /**
      * 
      * @var string CSS class name or Element Id 
@@ -37,6 +44,11 @@ class EToolTipster extends CWidget {
         $cs->registerCssFile($scriptUrl . '/css/themes/tooltipster-noir.css');
         $cs->registerCssFile($scriptUrl . '/css/themes/tooltipster-punk.css');
         $cs->registerCssFile($scriptUrl . '/css/themes/tooltipster-shadow.css');
+        
+        // adding url for theme css file
+        if(isset($this->themeCssFile))
+            $cs->registerCssFile($this->themeCssFile);
+            
         $cs->registerCoreScript('jquery');
         $cs->registerScriptFile($scriptUrl . '/js/jquery.tooltipster.min.js', CClientScript::POS_END);
     }
